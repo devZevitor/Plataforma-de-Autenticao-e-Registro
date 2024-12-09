@@ -1,7 +1,6 @@
 import { FastifyInstance } from "fastify";
 import {prisma} from "../lib/prisma";
 
-
     export async function getUsers(server: FastifyInstance){
        server.get("/usuarios", async (request, reply) => {
             try {

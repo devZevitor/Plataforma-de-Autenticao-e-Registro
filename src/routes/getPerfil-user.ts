@@ -2,6 +2,7 @@
     import { prisma } from "../lib/prisma";
     import { ZodTypeProvider } from "fastify-type-provider-zod";
     import z from "zod";
+import { Clienterror } from "../erros/Client-erro";
 
     export async function getUser(server: FastifyInstance){
         server.withTypeProvider<ZodTypeProvider>().get("/perfil/:id", {
@@ -31,9 +32,7 @@
                 {
                     return reply.send(user);
                 } else {
-                    return reply.status(404).send({
-                        message: "Usuario não encontrado",
-                    })
+                    throw new Clienterror("Usuario não encontrado!")
                 }
 
             } catch (error){

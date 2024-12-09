@@ -1,0 +1,26 @@
+POST http://localhost:3333/cadastro
+Content-Type: application/json
+
+{
+  "nome": "Joao",
+  "email": "Pedro@gmail.com",
+  "idade": 25,
+  "senha": "minhasenha000"
+}
+
+###
+Get http://localhost:3333/usuarios
+Content-Type: application/json
+
+###
+POST http://localhost:3333/usuarioLogin
+Content-Type: application/json
+
+{
+  "email": "Pedro@gmail.com",
+  "senha": "minhasenha001"
+}
+
+###
+Get http://localhost:3333/perfil/66abd6e5-9464-4f96-a22f-5a1d751e089d
+Content-Type: application/json
