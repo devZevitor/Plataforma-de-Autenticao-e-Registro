@@ -2,10 +2,10 @@ POST http://localhost:3333/cadastro
 Content-Type: application/json
 
 {
-  "nome": "Joao",
-  "email": "Pedro@gmail.com",
-  "idade": 25,
-  "senha": "minhasenha000"
+  "nome": "Raissa",
+  "email": "ruasemsaida@gmail.com",
+  "idade": 19,
+  "senha": "raissa123"
 }
 
 ###
